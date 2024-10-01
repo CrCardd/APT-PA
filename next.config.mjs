@@ -12,6 +12,16 @@ const nextConfig = {
                 destination: "/maths"
 
             },
+            {
+                source: "/reused-function",
+                destination: "/general_function"
+
+            },
+            {
+                source: "/cats",
+                destination: "/catsPage"
+
+            },
         ]
     }
 };
