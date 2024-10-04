@@ -49,12 +49,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${karla.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${karla.variable} antialiased flex `}
       >
 
-        <Menu/>
 
+        <Menu op1={"Menu"} op2={"Maths"} op3={"General function"} op4={"Gatinhos"} op5={"alguma coisa"} op6={"Axios page"}/>
+      
+        <main className="flex mt-20 justify-center items-center">
         {children}
+        </main>
+        
+          
+        
 
         <Footer var1={'VAR1'} var2={'VAR2'}/>
 

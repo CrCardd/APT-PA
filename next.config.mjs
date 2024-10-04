@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
+    images: {
+        remotePatterns: [{protocol: "https", hostname: "rickandmortyapi.com"}],
+    },
+
     rewrites: () => {
         return[
             {
@@ -13,15 +18,27 @@ const nextConfig = {
 
             },
             {
-                source: "/reused-function",
-                destination: "/general_function"
+                source: "/reused-function", //url
+                destination: "/general_function" //pasta
 
             },
             {
                 source: "/cats",
-                destination: "/catsPage"
+                destination: "/cats-page"
 
             },
+            {
+                source: "/pagina-com-fetch",
+                destination: "/fetch-page"
+            },
+            {
+                source: "/pagina-com-axios",
+                destination: "/axios-page"
+            },
+            {
+                source: "/pagina-server-side",
+                destination: "/server-side"
+            }
         ]
     }
 };
